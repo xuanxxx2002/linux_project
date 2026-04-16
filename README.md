@@ -66,6 +66,7 @@ obj-y := my_get_physical_addresses.o
 ```makefile
 core-y += kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ get_phsical_address/
 ```
+![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image1.png)
 
 ### 5. 註冊 Syscall 編號
 
@@ -74,6 +75,7 @@ core-y += kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ get_phsical_address/
 ```
 449    common    my_get_physical_addresses    sys_my_get_physical_addresses
 ```
+![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image2.png)
 
 ### 6. 宣告 Syscall 原型
 
@@ -136,8 +138,12 @@ gcc -o q1_cow_b q1_cow_b.c
 ```
 
 **預期輸出：**
+![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image3.png)
 
-
+**概念：**
+![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image3-1.png)
+![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image3-2.png)
+![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image3-3.png)
 
 **結論：** 當父子 process 共用同一份資源時，系統不會立即複製。只有當其中一方嘗試寫入時，才會對該頁面進行實際的複製——讀取時共享、寫入時複製。
 
@@ -155,7 +161,7 @@ gcc -o q2_loader_b q2_loader_b.c
 ```
 
 **預期輸出：**
-
+![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image4.png)
 
 
 **結論：** 程式啟動初期，只有實際被存取的頁面才會分配實體記憶體。未被存取的頁面維持未映射狀態，直到第一次存取觸發 page fault，作業系統才動態完成映射與實體記憶體配置。
