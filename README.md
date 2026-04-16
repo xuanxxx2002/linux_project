@@ -138,9 +138,11 @@ gcc -o q1_cow_b q1_cow_b.c
 ```
 
 **預期輸出：**
+
 ![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image3.png)
 
 **概念：**
+
 ![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image3-1.png)
 ![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image3-2.png)
 ![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image3-3.png)
@@ -161,6 +163,7 @@ gcc -o q2_loader_b q2_loader_b.c
 ```
 
 **預期輸出：**
+
 ![image](https://github.com/xuanxxx2002/linux_project/blob/main/image/image4.png)
 
 
